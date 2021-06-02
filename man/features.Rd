@@ -352,6 +352,11 @@ computation of the ELA local search features) or \code{\link{density}}
       function evaluations and runtime (in seconds), which were needed for
       the computation of these features
     }
+    \item{\code{entropy} -- entropic significance features}:\cr
+    \itemize{
+      \item{\code{entropy.Hy}}: Entropy of the objective values
+      \item{\code{entropy.xi_d}}: d-th order entropic significance
+    }
   }
 }
 \description{
@@ -372,6 +377,7 @@ Performs an Exploratory Landscape Analysis of a continuous function and
     \item{LiMo}: linear model features (\code{"limo"})
     \item{NBC}: nearest better clustering features (\code{"nbc"})
     \item{PC}: principal component features (\code{"pca"})
+    \item{Entropy}: entropic significance features (\code{"entropy"})
   }
 }
 \details{
@@ -694,5 +700,9 @@ system.time((levelset.seq = calculateFeatureSet(feat.object, "ela_level")))}
     Problems Using Information Content}, in: IEEE Transactions on
     Evolutionary Computation (19:1), pp. 74-87
     (\url{http://dx.doi.org/10.1109/TEVC.2014.2302006}).
+    \item{Seo, D., and Moon, B. (2007)}:
+    \dQuote{An information-theoretic analysis on the interactions of variables in combinatorial optimization problems},
+    in Evolutionary Computation (15:2), pp. 169-198
+    (\url{https://doi.org/10.1162/evco.2007.15.2.169}).
   }
 }

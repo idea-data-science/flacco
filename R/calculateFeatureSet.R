@@ -24,6 +24,7 @@ calculateFeatureSet = function(feat.object, set, control, ...) {
     pca = calculatePrincipalComponentFeatures(feat.object, control),
     bt = calculateBarrierTreeFeatures(feat.object, control),
     gcm = calculateGCMFeatures(feat.object, control),
-    ic = calculateInformationContentFeatures(feat.object, control)
+    ic = calculateInformationContentFeatures(feat.object, control),
+    entropy = calculateEntropyFeatures(feat.object, control)
   )
 }

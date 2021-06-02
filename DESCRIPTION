@@ -5,20 +5,23 @@ Description: Tools and features for "Exploratory Landscape Analysis (ELA)" of
 	single-objective continuous optimization problems.
     Those features are able to quantify rather complex properties, such as the
     global structure, separability, etc., of the optimization problems.
-Authors@R: c(person("Pascal", "Kerschke", role = c("aut", "cre"),
-    email = "kerschke@uni-muenster.de"),
+Authors@R: c(person("Pascal", "Kerschke", role = c("aut", "cre"), 
+             email = "kerschke@uni-muenster.de"),
     person("Christian", "Hanster", role = "ctb"),
-    person("Jan", "Dagefoerde", role = "ctb"))
+    person("Jan", "Dagefoerde", role = "ctb"),
+    person("Olaf", "Mersmann", role = "ctb", 
+           email = "olafm@p-value.net", 
+           comment=c(orcid="0000-0002-7720-4939")))
 URL: https://github.com/kerschke/flacco
 BugReports: https://github.com/kerschke/flacco/issues
 License: BSD_2_clause + file LICENSE
 Encoding: UTF-8
-Roxygen: list(wrap = FALSE)
 Depends:
     R (>= 3.0.0)
 Imports:
     BBmisc,
     checkmate,
+    kdpee,
     mlr
 Suggests:
     devtools,
@@ -44,7 +47,7 @@ Suggests:
     testthat
 LazyData: yes
 ByteCompile: yes
-Version: 1.8
-Date: 2020-03-31
-RoxygenNote: 7.1.0
+Version: 1.9
+Date: 2021-06-02
+RoxygenNote: 7.1.1
 VignetteBuilder: R.rsp

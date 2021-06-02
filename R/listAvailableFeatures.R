@@ -51,6 +51,7 @@ listAllFeatureSets = function() {
     ela = c("ela_conv", "ela_curv", "ela_distr", "ela_level", "ela_local", "ela_meta"),
     misc = c("basic", "disp", "limo", "nbc", "pca"),
     gcm = c("bt", "gcm"),
-    ic = "ic"
+    ic = "ic",
+    entropy = "entropy"
   )
 }
